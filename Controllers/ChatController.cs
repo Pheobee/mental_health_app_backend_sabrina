@@ -16,7 +16,7 @@ namespace MentalHealthAPI.Controllers
         public ChatbotController(IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
             _httpClient = httpClientFactory.CreateClient();
-            _apiKey = configuration["Gemini:ApiKey"]; // Ensure it's stored under "Gemini" in appsettings
+            _apiKey = configuration["Gemini:ApiKey"];
         }
 
         [HttpPost("ask")]
